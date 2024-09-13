@@ -57,7 +57,7 @@ const Gnews = () => {
                     {title && (
                     <div className="news-title" onClick={() => articleClickHandler(title)}>
                         <img src={title.image} alt="title-image" />
-                        <h2 className='news-subtitle'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, perspiciatis.</h2>
+                        <h2 className='news-subtitle'>{title.title}</h2>
                     </div>
                     )}
                     <div className="news-cards-container">
