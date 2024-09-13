@@ -1,7 +1,7 @@
 .modal-popup {
     position: fixed;
     inset: 0;
-    background-color: rbga(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +9,12 @@
 }
 
 .modal-content {
+    position: relative;
     width: 90%;
     max-width: 50rem;
     height: auto;
     max-height: 90%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 0 3rem 4rem rgba(0, 0, 0, 0.5);
@@ -21,10 +22,12 @@
 
 .close-button {
     position: absolute;
-    top: 14rem;
-    right: 36.3rem;
-    color: #212AFBFF;
+    top: 0;
+    right: 0;
+    color: rgb(33, 251, 37);
     cursor: pointer;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 .modal-image {
@@ -39,20 +42,20 @@
 .modal-title {
     font-family: 'Comfortaa', system-ui;
     font-size: 1.5rem;
-    color: #212AFBFF;
+    color: rgb(17, 255, 0);
     margin-top: 1rem;
 }
 
 .modal-source {
     font-family: 'Comfortaa', system-ui;
     font-size: 1.2rem;
-    color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
     margin-top: 1rem;
 }
 
 .modal-content-text {
     font-size: 1rem;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-top: 2rem;
     line-height: 1.5rem;
 }
@@ -61,8 +64,8 @@
     font-family: 'Inter', sans-serif;
     width: 12rem;
     display: inline-block;
-    background-color: #212AFBFF;
-    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(2, 255, 23), rgb(0, 229, 255));
+    color: rgb(0, 0, 0);
     padding: 1rem 2rem;
     margin-top: 1rem;
     font-size: 1rem;
@@ -78,19 +81,11 @@
     .modal-content {
       width: 80%;
     }
-    .close-button {
-        top: 10.5rem;
-        right: 5.5rem;
-    }
   }
 
   @media (max-width: 430px) {
     .modal-content {
       width: 80%;
-    }
-    .close-button {
-        top: 19rem;
-        right: 5rem;
     }
   }
   
