@@ -1,11 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import techNewsImg from '../assets/techNewsImg.jpeg'
-import businessNewsImg from '../assets/businessNews.jpeg'
-import entertainmentNewsImg from '../assets/entertainmentNews.jpeg'
-import politicsNewsImg from '../assets/politicsNews.jpeg'
-import scienceNewsImg from '../assets/scienceNews.jpeg'
-import sportsNewsImg from '../assets/sportsNews.jpeg'
-import worldNewsImg from '../assets/worldNews.jpeg'
 import './Gnews.css';
 import axios from 'axios';
 import NewsModal from './newsModal'
